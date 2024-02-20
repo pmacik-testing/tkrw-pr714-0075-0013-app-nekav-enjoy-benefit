@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-bix3
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0013-tenant/tkrw-pr714-0075-0013-app/devfile-sample-bix3@sha256:cd47ceaa77485da4ed23f728e24d95505641e35faed709034ff5ab224e218cd9
+        name: my-nodejs
+        resources: {}
+status: {}
